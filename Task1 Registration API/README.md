@@ -48,11 +48,11 @@ This project provides an API for managing applications, including adding, retrie
     "institute": "ABC University",
     "field_of_study": "Computer Science",
     "years_education": "4",
-    "region": "North America",
-    "facebook": "facebook.com/johndoe",
-    "instagram": "instagram.com/johndoe",
-    "linkedin": "linkedin.com/in/johndoe",
-    "experience": "2 years in software development",
+    "region": " PK",
+    "facebook": "facebook.com",
+    "instagram": "instagram.com",
+    "linkedin": "linkedin.com/in",
+    "experience": "2",
     "skills": ["Python", "Django", "JavaScript"]
   }
   ```
@@ -87,11 +87,11 @@ This project provides an API for managing applications, including adding, retrie
       "institute": "ABC University",
       "field_of_study": "Computer Science",
       "years_education": 4,
-      "region": "North America",
-      "facebook": "facebook.com/johndoe",
-      "instagram": "instagram.com/johndoe",
-      "linkedin": "linkedin.com/in/johndoe",
-      "experience": "2 years in software development",
+      "region": " PK",
+      "facebook": "facebook.com ",
+      "instagram": "instagram.com ",
+      "linkedin": "linkedin.com/in ",
+      "experience": "2  ",
       "skills": ["Python", "Django", "JavaScript"]
     }
     ```
@@ -120,11 +120,11 @@ This project provides an API for managing applications, including adding, retrie
           "institute": "ABC University",
           "field_of_study": "Computer Science",
           "years_education": 4,
-          "region": "North America",
-          "facebook": "facebook.com/johndoe",
-          "instagram": "instagram.com/johndoe",
-          "linkedin": "linkedin.com/in/johndoe",
-          "experience": "2 years in software development",
+          "region": " PK",
+          "facebook": "facebook.com ",
+          "instagram": "instagram.com ",
+          "linkedin": "linkedin.com/in ",
+          "experience": "2",
           "skills": ["Python", "Django", "JavaScript"]
         }
         // more records
