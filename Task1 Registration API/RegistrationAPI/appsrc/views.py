@@ -56,15 +56,15 @@ def add_record(request):
         )
     
     
-    return JsonResponse({"Message": "Data Added Successfully", "RecordID": application.id}, status=201)
+    return JsonResponse({"Message": "Data Added Successfully", "RecordID": application.id}, status=200)
     
     
 def get_record(request, id):
     if Application.objects.filter(id = id):
         application = Application.objects.get(id = id)
-        return JsonResponse(application.to_json())
+        return JsonResponse(application.to_json(), status=200)
     
-    return JsonResponse({"Message": f"No record exists with id={id}"})
+    return JsonResponse({"Message": f"No record exists with id={id}"}, status=404)
     
 
 def get_records(request):
