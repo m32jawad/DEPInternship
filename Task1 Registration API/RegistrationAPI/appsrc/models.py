@@ -15,7 +15,7 @@ class Application(models.Model):
     # Education
     institute = models.CharField(max_length=200, null=True)
     field_of_study = models.CharField(max_length=200, null=True)
-    years_education = models.DecimalField(max_digits=2, decimal_places=2, null=True)
+    years_education = models.FloatField(null=True)
     region =  models.CharField(max_length=200, null=True)
     
     #Social
@@ -47,9 +47,10 @@ class Application(models.Model):
             "linkedin": self.linkedin,
             "experience": self.experience,
             "application_datetime": self.application_datetime.isoformat() if self.application_datetime else None,
+            "skills": [skill.title for skill in self.skills.all()]
         }
         
-        return json.dumps(model_dict, cls=DjangoJSONEncoder)
+        return model_dict
         
     
 class Skill(models.Model):
